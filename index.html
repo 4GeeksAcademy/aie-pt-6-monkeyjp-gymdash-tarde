@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymDash · Panel del gimnasio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased min-h-screen">
+    <header class="sticky top-0 z-10 border-b border-gray-200 bg-white">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+            <h1 class="text-xl font-bold tracking-tight">GymDash <span class="font-normal text-gray-500">/ Centro deportivo</span></h1>
+            <nav aria-label="Navegación principal" class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-gray-600">
+                <a class="hover:text-emerald-700" href="#kpis">Resumen</a>
+                <a class="hover:text-emerald-700" href="#drivers">Indicadores</a>
+                <a class="hover:text-emerald-700" href="#operaciones">Operaciones</a>
+            </nav>
+        </div>
+    </header>
+    <main class="mx-auto max-w-7xl space-y-10 px-4 py-6 sm:px-6 lg:px-8">
+        <section id="kpis" class="scroll-mt-24 space-y-4">
+            <div class="flex flex-wrap items-end justify-between gap-2">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Panel de control · Octubre 2026</p>
+                    <h2 class="mt-1 text-2xl font-bold tracking-tight">Resumen del mes</h2>
+                </div>
+                <p class="text-sm text-gray-500">Actualizado hoy, 09:41</p>
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                    <p class="text-sm font-medium text-gray-500">Socios activos</p>
+                    <p class="mt-2 text-3xl font-bold text-gray-900">245</p>
+                    <p class="mt-1 text-sm text-gray-500">Básica 85 · Estándar 120 · Premium 40</p>
+                </article>
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                    <p class="text-sm font-medium text-gray-500">Ingresos mensuales</p>
+                    <p class="mt-2 text-3xl font-bold text-gray-900">12.745 €</p>
+                    <p class="mt-1 text-sm text-gray-500">11.505 € membresías + 1.240 € otros</p>
+                </article>
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                    <p class="text-sm font-medium text-gray-500">Ocupación media de clases</p>
+                    <p class="mt-2 text-3xl font-bold text-gray-900">84,6 %</p>
+                    <p class="mt-1 text-sm text-gray-500">55 de 65 plazas</p>
+                </article>
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                    <p class="text-sm font-medium text-gray-500">Crecimiento neto</p>
+                    <p class="mt-2 text-3xl font-bold text-gray-900">+13</p>
+                    <p class="mt-1 text-sm text-gray-500">18 altas · 5 bajas</p>
+                </article>
+            </div>
+        </section>
+        <section id="drivers" class="scroll-mt-24 space-y-4">
+            <div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Rendimiento</p>
+                <h2 class="mt-1 text-2xl font-bold tracking-tight">Indicadores clave</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                    <div class="mb-6 flex items-start justify-between gap-3">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Ingresos</p>
+                            <h3 class="mt-1 text-lg font-semibold">Por membresía</h3>
+                        </div>
+                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-800">12.745 €</span>
+                    </div>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">Estándar</span><span class="tabular-nums text-gray-600">5.880 € · 46,1 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-[46.1%] rounded-full bg-emerald-600"></div></div>
+                        </li>
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">Premium</span><span class="tabular-nums text-gray-600">3.160 € · 24,8 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-[24.8%] rounded-full bg-emerald-600"></div></div>
+                        </li>
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">Básica</span><span class="tabular-nums text-gray-600">2.465 € · 19,3 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-[19.3%] rounded-full bg-emerald-600"></div></div>
+                        </li>
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">Otros ingresos</span><span class="tabular-nums text-gray-600">1.240 € · 9,7 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-[9.7%] rounded-full bg-emerald-600"></div></div>
+                        </li>
+                    </ul>
+                    <p class="mt-5 border-t border-gray-100 pt-4 text-xs text-gray-500">Recaudación total · octubre</p>
+                </article>
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Socios</p>
+                        <h3 class="mt-1 text-lg font-semibold">Altas y bajas</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-l-2 border-emerald-500 pl-3">
+                            <p class="text-sm text-gray-500">Altas</p>
+                            <p class="mt-1 text-3xl font-bold tabular-nums text-emerald-700">18</p>
+                        </div>
+                        <div class="border-l-2 border-rose-500 pl-3">
+                            <p class="text-sm text-gray-500">Bajas</p>
+                            <p class="mt-1 text-3xl font-bold tabular-nums text-rose-700">5</p>
+                        </div>
+                    </div>
+                    <div class="mt-7 h-3 overflow-hidden rounded-full bg-gray-100" aria-label="18 altas y 5 bajas">
+                        <div class="flex h-full" aria-hidden="true"><span class="h-full w-[78.3%] bg-emerald-500"></span><span class="h-full w-[21.7%] bg-rose-500"></span></div>
+                    </div>
+                    <p class="mt-5 border-t border-gray-100 pt-4 text-sm text-gray-600">Crecimiento neto <strong class="ml-1 text-emerald-700">+13</strong></p>
+                </article>
+                <article class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200 md:col-span-2 lg:col-span-1">
+                    <div class="mb-6 flex items-start justify-between gap-3">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Clases</p>
+                            <h3 class="mt-1 text-lg font-semibold">Mayor ocupación</h3>
+                        </div>
+                        <span class="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-800">Esta semana</span>
+                    </div>
+                    <ol class="space-y-5">
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">HIIT</span><span class="font-semibold tabular-nums">100 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-full rounded-full bg-rose-500"></div></div>
+                        </li>
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">Pilates</span><span class="font-semibold tabular-nums">100 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-full rounded-full bg-rose-500"></div></div>
+                        </li>
+                        <li>
+                            <div class="mb-2 flex justify-between gap-2 text-sm"><span class="font-medium">Yoga Matinal</span><span class="font-semibold tabular-nums">93 %</span></div>
+                            <div class="h-2 rounded-full bg-gray-100" aria-hidden="true"><div class="h-full w-[93%] rounded-full bg-amber-500"></div></div>
+                        </li>
+                    </ol>
+                    <p class="mt-5 border-t border-gray-100 pt-4 text-xs text-gray-500">Capacidad ocupada por sesión</p>
+                </article>
+            </div>
+        </section>
+        <section id="operaciones" class="scroll-mt-24 space-y-4">
+            <div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Gestión diaria</p>
+                <h2 class="mt-1 text-2xl font-bold tracking-tight">Detalles operacionales</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                <article class="min-w-0 rounded-xl bg-white p-5 shadow-sm ring-1 ring-gray-200 sm:p-6">
+                    <div class="mb-5">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Programación semanal</p>
+                        <h3 class="mt-1 text-lg font-semibold">Horario de clases</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full table-fixed text-left text-sm">
+                            <thead class="border-b border-gray-200 text-xs uppercase tracking-wide text-gray-500">
+                                <tr>
+                                    <th scope="col" class="w-[45%] px-2 py-3 font-medium">Clase</th>
+                                    <th scope="col" class="hidden px-2 py-3 text-center font-medium sm:table-cell">Aforo</th>
+                                    <th scope="col" class="hidden px-2 py-3 text-center font-medium sm:table-cell">Inscritos</th>
+                                    <th scope="col" class="w-[28%] px-2 py-3 text-right font-medium">Ocupación</th>
+                                    <th scope="col" class="hidden px-2 py-3 font-medium sm:table-cell">Días</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 text-left font-medium text-gray-900">Yoga Matinal<span class="mt-1 block text-xs font-normal text-gray-500 sm:hidden">14/15 · Lun / Mié / Vie</span></th>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">15</td>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">14</td>
+                                    <td class="px-2 py-3 text-right"><span class="inline-flex rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold tabular-nums text-amber-800">93 %</span></td>
+                                    <td class="hidden px-2 py-3 text-xs text-gray-600 sm:table-cell">Lun / Mié / Vie</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 text-left font-medium text-gray-900">HIIT<span class="mt-1 block text-xs font-normal text-gray-500 sm:hidden">20/20 · Mar / Jue</span></th>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">20</td>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">20</td>
+                                    <td class="px-2 py-3 text-right"><span class="inline-flex rounded-full bg-rose-50 px-2 py-1 text-xs font-semibold tabular-nums text-rose-800">Completo · 100 %</span></td>
+                                    <td class="hidden px-2 py-3 text-xs text-gray-600 sm:table-cell">Mar / Jue</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 text-left font-medium text-gray-900">Spinning<span class="mt-1 block text-xs font-normal text-gray-500 sm:hidden">9/18 · Lun / Mié</span></th>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">18</td>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">9</td>
+                                    <td class="px-2 py-3 text-right"><span class="inline-flex rounded-full bg-emerald-50 px-2 py-1 text-xs font-semibold tabular-nums text-emerald-800">50 %</span></td>
+                                    <td class="hidden px-2 py-3 text-xs text-gray-600 sm:table-cell">Lun / Mié</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 text-left font-medium text-gray-900">Pilates<span class="mt-1 block text-xs font-normal text-gray-500 sm:hidden">12/12 · Mar / Vie</span></th>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">12</td>
+                                    <td class="hidden px-2 py-3 text-center tabular-nums sm:table-cell">12</td>
+                                    <td class="px-2 py-3 text-right"><span class="inline-flex rounded-full bg-rose-50 px-2 py-1 text-xs font-semibold tabular-nums text-rose-800">Completo · 100 %</span></td>
+                                    <td class="hidden px-2 py-3 text-xs text-gray-600 sm:table-cell">Mar / Vie</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <article class="min-w-0 rounded-xl bg-white p-5 shadow-sm ring-1 ring-gray-200 sm:p-6">
+                    <div class="mb-5">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Planes y cuotas</p>
+                        <h3 class="mt-1 text-lg font-semibold">Tipos de membresía</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full table-fixed text-left text-xs sm:text-sm">
+                            <thead class="border-b border-gray-200 text-[0.65rem] uppercase tracking-wide text-gray-500 sm:text-xs">
+                                <tr>
+                                    <th scope="col" class="w-[32%] px-2 py-3 font-medium">Tipo</th>
+                                    <th scope="col" class="w-[20%] px-2 py-3 text-right font-medium">Precio</th>
+                                    <th scope="col" class="w-[24%] px-2 py-3 text-right font-medium">Socios activos</th>
+                                    <th scope="col" class="w-[24%] px-2 py-3 text-right font-medium">Ingresos</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 font-medium text-gray-900">Básica</th>
+                                    <td class="px-2 py-3 text-right tabular-nums">29 €</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">85</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">2.465 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 font-medium text-gray-900">Estándar</th>
+                                    <td class="px-2 py-3 text-right tabular-nums">49 €</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">120</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">5.880 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-2 py-3 font-medium text-gray-900">Premium</th>
+                                    <td class="px-2 py-3 text-right tabular-nums">79 €</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">40</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">3.160 €</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="border-t border-gray-200 font-semibold text-gray-900">
+                                <tr>
+                                    <th scope="row" class="px-2 py-3">Total</th>
+                                    <td class="px-2 py-3"></td>
+                                    <td class="px-2 py-3 text-right tabular-nums">245</td>
+                                    <td class="px-2 py-3 text-right tabular-nums">11.505 €</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-gray-200 bg-white">
+        <p class="mx-auto max-w-7xl px-4 py-5 text-sm text-gray-500 sm:px-6 lg:px-8">Datos de ejemplo · mes actual</p>
+    </footer>
+</body>
+</html>
